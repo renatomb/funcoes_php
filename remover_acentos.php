@@ -30,7 +30,7 @@ function remover_acentos($string,$r_cr=false,$t_ret=0) {
    // Remove todos os caracteres que não são letras ou espaços em branco
    $string = preg_replace('/[^a-z\s]/i', '', $string);
    // Remove as quebra de linha no final
-   if ($r_cn) { $string = rtrim($string); }
+   if ($r_cr) { $string = rtrim($string); }
    // Remove espaços em branco duplicados
    $string = remover_espacos_duplicados($string);
    switch($t_ret){
